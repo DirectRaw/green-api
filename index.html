@@ -10,25 +10,36 @@
 
 <body>
     <div class="container">
+        <!-- Левая колонка -->
         <div class="left-column">
-            <input type="text" id="idInstance" placeholder="Enter idInstance">
-            <input type="text" id="apiTokenInstance" placeholder="Enter ApiTokenInstance">
+            <h2>Controls</h2>
+            <!-- Поля для ID и токена -->
+            <input type="text" id="idInstance" placeholder="Enter your idInstance">
+            <input type="text" id="apiTokenInstance" placeholder="Enter your ApiTokenInstance">
 
-            <button onclick="getSettings()" class="first-button">Get Settings</button>
-            <button onclick="getStateInstance()" class="margin-bottom">Get State Instance</button>
+            <!-- Кнопки -->
+            <button onclick="getSettings()" class="button">Get Settings</button>
+            <button onclick="getStateInstance()" class="button">Get State Instance</button>
 
-            <input type="text" id="phone" placeholder="Enter Phone Number for Message">
-            <input type="text" id="message" placeholder="Enter Message Text">
-            <button onclick="sendMessage()" class="margin-bottom">Send Message</button>
+            <br><br>
 
-            <input type="text" id="phoneFile" placeholder="Enter Phone Number for File">
-            <input type="text" id="fileUrl" placeholder="Enter HTTP URL">
-            <button onclick="sendFileByUrl()">Send File By URL</button>
+            <!-- Поля для отправки сообщений -->
+            <input type="text" id="phone" placeholder="Phone Number for Message">
+            <input type="text" id="message" placeholder="Message Text">
+            <button onclick="sendMessage()" class="button">Send Message</button>
+
+            <br><br>
+
+            <!-- Поля для отправки файлов -->
+            <input type="text" id="phoneFile" placeholder="Phone Number for File">
+            <input type="text" id="fileUrl" placeholder="File HTTP URL">
+            <button onclick="sendFileByUrl()" class="button">Send File By URL</button>
         </div>
 
+        <!-- Правая колонка -->
         <div class="right-column">
-            <label for="response">Response:</label>
-            <textarea id="response" readonly></textarea>
+            <h2>Response</h2>
+            <textarea id="response" placeholder="Server response will appear here..." readonly></textarea>
         </div>
     </div>
 

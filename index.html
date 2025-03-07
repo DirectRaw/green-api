@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GREEN-API Interaction Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-column">
+            <input type="text" id="idInstance" placeholder="Enter idInstance">
+            <input type="text" id="apiTokenInstance" placeholder="Enter ApiTokenInstance">
+
+            <button onclick="getSettings()" class="first-button">Get Settings</button>
+            <button onclick="getStateInstance()" class="margin-bottom">Get State Instance</button>
+
+            <input type="text" id="phone" placeholder="Enter Phone Number for Message">
+            <input type="text" id="message" placeholder="Enter Message Text">
+            <button onclick="sendMessage()" class="margin-bottom">Send Message</button>
+
+            <input type="text" id="phoneFile" placeholder="Enter Phone Number for File">
+            <input type="text" id="fileUrl" placeholder="Enter HTTP URL">
+            <button onclick="sendFileByUrl()">Send File By URL</button>
+        </div>
+
+        <div class="right-column">
+            <label for="response">Response:</label>
+            <textarea id="response" readonly></textarea>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

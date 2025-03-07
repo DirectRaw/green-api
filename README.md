@@ -1,4 +1,5 @@
 NGINX Proxy with Docker for GREEN-API
+
 Overview
 This setup uses NGINX as a reverse proxy to route requests to GREEN-API while serving static files. The configuration is containerized using Docker, making it easy to deploy and manage.
 
